@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.JsonRequestActivity">
+
+    <Button
+            android:id="@+id/btnSendJsonObjectRequest"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFFFF"
+            android:text="Sending JSON Object Request"/>
+
+    <Button
+            android:id="@+id/btnSendJsonArrayRequest"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSendJsonObjectRequest"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFFFF"
+            android:text="Sending JSON Array  Request"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnSendJsonArrayRequest"
+            android:layout_marginTop="16dp"
+            android:padding="8dp">
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/progressbarSize"
+                android:layout_height="@dimen/progressbarSize"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/colorPrimary"/>
+
+
+        <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/txtResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

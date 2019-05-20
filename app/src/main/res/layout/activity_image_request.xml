@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".activities.ImageRequestActivity">
+
+    <Button
+            android:id="@+id/btnSendImageRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFFFF"
+            android:text="Sending Image Request"/>
+
+    <RelativeLayout
+            android:layout_width="394dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/btnSendImageRequest">
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/progressbarSize"
+                android:layout_height="@dimen/progressbarSize"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/colorPrimary"/>
+
+        <ImageView
+                android:id="@+id/imgImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
